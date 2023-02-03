@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart WK</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <div id="sidemenu" class="menu-collapsed">
+        <!--Encabezado-->
+        <div id="header">
+            <div id="title"><span>Smart WK</span></div>
+            <div id="menu-btn">
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+            </div>
+        </div>
+        <!--Perfil-->
+        <div id="profile">
+            <div id="photo">
+                <a href="home.html">
+                  <img src="img/smart wk.png" alt="logo">  
+                </a>
+                <div id="name">
+                    <span>work - smart</span>
+                </div>
+            </div>
+        </div>
+        <!--Items-->
+        <div id="menu-items">
+            <div class="item">
+                <a href="todo.html">
+                    <div class="icon"><img src="img/items to do.png" alt=""></div>
+                    <div class="title">To do List</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="pomodoro.html">
+                    <div class="icon"><img src="img/item reloj.png" alt=""></div>
+                    <div class="title">Pomodoro Timer</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="clima.html">
+                    <div class="icon"><img src="img/item clima.png" alt=""></div>
+                    <div class="title">Weather</div>
+                </a>
+            </div>
+ 
+        </div>
+    </div>
+    <div id="main-container">
+        <main class="app">
+            <!-- Greeting -->
+            <section class="greeting">
+                <h2 class="title">
+                    Tasks
+                </h2>
+            </section>
+            <!-- End of Greeting -->
+            
+            <!-- New Todo -->
+            <section class="create-todo">
+                <h3>CREATE A LIST</h3>
+                <form id="new-todo-form">
+                    <h4>What will you do today?</h4>
+                    <input 
+                        type="text" 
+                        placeholder="e.g. Get some milk"
+                        name="content"
+                        id="content" />
+                    
+                    <h4>Pick a category</h4>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="category" id="category1" value="business" /> 
+                            <span class="bubble business"></span>
+                            <div>Work</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="category" id="category2" value="personal" />
+                            <span class="bubble personal"></span>
+                            <div>Personal</div>
+                        </label>
+                    </div>
+    
+                    <input type="submit" value="Add task" />
+                </form>
+            </section>
+            <!-- End of New Todo -->
+    
+            <!-- Todo List -->
+            <section class="todo-list">
+                <h3>TASKS OF THE DAY</h3>
+                <div class="list" id="todo-list"></div>
+            </section>
+            <!-- End of Todo List -->
+    
+        </main>
+    </div>
+
+
+    <script src="assets/jquery-3.6.1.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/todo.js"></script>
+</body>
+</html>
